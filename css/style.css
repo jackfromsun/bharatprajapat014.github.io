@@ -29,7 +29,6 @@ body {
 
 #navbar {
     display: flex;
-    top: -70px;
     position: sticky;
 }
 
@@ -47,11 +46,6 @@ body {
     margin: 10px 34px;
 }
 
-#logo img {
-    height: 28px;
-    margin: 46px 34px;
-}
-
 #navbar ul {
     display: flex;
 }
@@ -59,6 +53,8 @@ body {
 #navbar ul li {
     list-style: none;
     font: 1.3rem;
+    padding: 5px 5px;
+    margin: -14px 5px;
 }
 
 #navbar ul li a {

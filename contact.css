@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    opacity: 20;
+    background-image: linear-gradient(30deg, #c6c8ec 12%, transparent 12.5%, transparent 87%, #7e82d6 87.5%, #9498db), linear-gradient(150deg, #b5b7df 12%, transparent 12.5%, transparent 87%, #acb0f3 87.5%, #babdf0), linear-gradient(30deg, #a5a9ec 12%, transparent 12.5%, transparent 87%, #9195e5 87.5%, #b1b4f0), linear-gradient(150deg, #a3a7f3 12%, transparent 12.5%, transparent 87%, #9095f7 87.5%, #bcbff3), linear-gradient(60deg, #b2b6fa77 25%, transparent 25.5%, transparent 75%, #aaaeec77 75%, #a4a9fa77), linear-gradient(60deg, #9ca1f577 25%, transparent 25.5%, transparent 75%, #8388ec77 75%, #444cf777);
+    background-size: 44px 77px;
+    background-position: 0 0, 0 0, 22px 39px, 22px 39px, 0 0, 22px 39px;
+}
+
+.navbar {
+    background-color: #7e82d6;
+    opacity: 0.8;
+    z-index: -1;
+    height: 45px;
+    box-shadow: 5px 5px 25px 7px black;
+    display: flex;
+    position: sticky;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 20px 150px;
+}
+
+.navbar ul li {
+    display: flex;
+}
+
+.details {
+    position: absolute;
+    bottom: 10px;
+    height: 220px;
+    width: 100%;
+    background-color: rgb(26, 26, 80);
+}
+
+.details ul {
+    list-style: none;
+    display: flex;
+}
+
+.details ul li {
+    color: rgb(233, 233, 233);
+    margin: 18px 5px;
+    text-decoration: overline;
+}
+
+#contact {
+    margin: 208px 20px;
+}
