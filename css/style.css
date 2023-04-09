@@ -1,260 +1,96 @@
-/* CSS Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('clg.webp');
+    background-size: cover;
+}
 
-* {
+h1 {
+    color: white;
+}
+
+header {
+    background-color: #0e2542;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 
-
-/* html {
-    /* scroll-behavior: smooth; */
-
-
-/* CSS Variables */
-
-:root {
-    --navbar-height: 59px;
+nav li {
+    display: inline-block;
+    margin-right: 20px;
 }
 
-
-/* Navigation Bar */
-
-body {
-    background-color: #ffffff;
-    opacity: 20;
-    background-image: linear-gradient(30deg, #c6c8ec 12%, transparent 12.5%, transparent 87%, #7e82d6 87.5%, #9498db), linear-gradient(150deg, #b5b7df 12%, transparent 12.5%, transparent 87%, #acb0f3 87.5%, #babdf0), linear-gradient(30deg, #a5a9ec 12%, transparent 12.5%, transparent 87%, #9195e5 87.5%, #b1b4f0), linear-gradient(150deg, #a3a7f3 12%, transparent 12.5%, transparent 87%, #9095f7 87.5%, #bcbff3), linear-gradient(60deg, #b2b6fa77 25%, transparent 25.5%, transparent 75%, #aaaeec77 75%, #a4a9fa77), linear-gradient(60deg, #9ca1f577 25%, transparent 25.5%, transparent 75%, #8388ec77 75%, #444cf777);
-    background-size: 44px 77px;
-    background-position: 0 0, 0 0, 22px 39px, 22px 39px, 0 0, 22px 39px;
+nav li:last-child {
+    margin-right: 0;
 }
 
-#navbar {
-    display: flex;
-    position: sticky;
-}
-
-#navbar::before {
-    content: "";
-    background-color: rgb(0, 0, 0);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.4;
-}
-
-#logo {
-    margin: 10px 34px;
-}
-
-#navbar ul {
-    display: flex;
-}
-
-#navbar ul li {
-    list-style: none;
-    font: 1.3rem;
-    padding: 5px 5px;
-    margin: -14px 5px;
-}
-
-#navbar ul li a {
-    color: rgb(0, 0, 0);
-    display: block;
-    padding: 3px 22px;
-    border-radius: 3px;
+nav a {
+    color: #051149;
     text-decoration: none;
+    padding: 10px;
 }
 
-#navbar ul li a:hover {
-    color: rgb(243, 243, 243);
-    background-color: black;
+nav a:hover {
+    background-color: #0c2442;
+    color: #fff;
 }
 
-#HOME {
-    display: flex;
-    flex-direction: column;
-    padding: 3px 200px;
-    height: 600px;
-    justify-content: center;
-    align-items: center;
-}
-
-#HOME::before {
-    content: "";
-    background: url(1.jpg) no-repeat center center/cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.1;
-}
-
-#HOME h1 {
-    color: rgb(0, 0, 0);
+main {
+    background-color: rgba(5, 3, 3, 0.4);
+    padding: 8px;
+    margin-top: 215px;
+    border-radius: 10px;
     text-align: center;
-    font-family: 'Bree Serif', serif;
-    font-size: 2.5rem;
+    color: #fff;
 }
 
-#HOME p {
-    color: rgb(2, 1, 1);
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Bree Serif', serif;
+h2 {
+    font-size: 32px;
 }
 
-#services {
-    margin: 10px;
-    display: flex;
-}
-
-#services .box {
-    border: 2px solid rgb(0, 0, 0);
-    padding: 34px;
-    margin: 2px 55px;
-    background: #f2f2f2;
+p {
+    font-size: 16px;
+    line-height: 1.5;
     margin-bottom: 20px;
 }
 
-#services .box img {
-    height: 160px;
-    margin: auto;
-    display: block;
-}
-
-#services .box {
-    border: 2px solid rgb(0, 0, 0);
-    padding: 34px;
-    margin: 2px;
-    background: #f2f2f2;
-    margin-bottom: 20px;
-}
-
-#services .box1 img {
-    height: 160px;
-    margin: auto;
-    display: block;
-}
-
-#services .box1 {
-    border: 2px solid rgb(0, 0, 0);
-    padding: 34px;
-    margin: 2px;
-    background: #f2f2f2;
-    margin-bottom: 20px;
-}
-
-#services .box1 img {
-    height: 160px;
-    margin: auto;
-    display: block;
-}
-
-#services .box2 {
-    border: 2px solid rgb(0, 0, 0);
-    padding: 34px;
-    margin: 2px;
-    background: #f2f2f2;
-    margin-bottom: 20px;
-}
-
-#services .box2 img {
-    height: 160px;
-    margin: auto;
-    display: block;
-}
-
-.h-primarycon {
-    text-align: center;
-    font-size: 2rem;
-    padding: 12px;
-}
-
-.h-sec {
-    text-align: center;
-    font-size: 3.8rem;
-    padding: 12px;
-}
-
-.btn {
-    padding: 6px 20px;
-    border: 5px solid black;
-    border-radius: 4px;
-    background-color: black;
-    color: aliceblue;
-    margin: 17px;
-    font-size: 1rem;
+button {
+    background-color: #091a49;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
 }
 
-.center {
+button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+footer {
+    background-color: rgba(5, 3, 3, 0.8);
+    color: #fff;
     text-align: center;
-}
-
-#client-section {
-    position: relative;
-}
-
-#client-section::before {
-    content: "";
-    position: absolute;
-    background: url('6.jpg');
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.3;
-}
-
-#clients {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.client-item {
-    padding: 34px;
-}
-
-#clients img {
-    height: 40px;
-}
-
-#contact {
-    position: relative;
-}
-
-#contact::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.7;
-    background: url('contact.jpg') no-repeat center center/cover;
-}
-
-#contact-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 34px;
-}
-
-#contact-box input,
-#contact-box textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 9px;
-    font-size: 1.1rem;
-}
-
-#contact-box form {
-    width: 40%;
-}
-
-#contact-box label {
-    font-size: 1rem;
-    font-family: 'Bree Serif', serif;
+    padding: 20px;
 }
